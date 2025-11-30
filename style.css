@@ -1,9 +1,8 @@
 html, body {
-  min-width: 360px;   /* A largura que você quiser */
-  min-height: 520px;  /* Altura que quiser */
+  min-width: 360px;   
+  min-height: 520px;  
 }
 
-/* Fundo com gradiente Brasil mais suave */
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
   background: linear-gradient(135deg, #009c3b 0%, #ffdf00 70%);
@@ -12,7 +11,6 @@ body {
   margin: 0;
 }
 
-/* Card central */
 body > * {
   animation: fadeIn .3s ease-in-out;
 }
@@ -32,7 +30,6 @@ label {
   display: block;
 }
 
-/* Inputs modernos */
 select, input, textarea {
   width: 100%;
   box-sizing: border-box;
@@ -46,19 +43,16 @@ select, input, textarea {
   transition: 0.25s;
 }
 
-/* Efeito ao focar */
 select:focus, input:focus, textarea:focus {
   border-color: #002776;
   box-shadow: 0 0 6px rgba(0, 39, 118, 0.5);
 }
 
-/* Textarea grande e confortável */
 textarea {
   height: 110px;
   resize: none;
 }
 
-/* Botão estiloso */
 button {
   width: 100%;
   padding: 14px;
@@ -84,7 +78,6 @@ button:active {
   transform: translateY(0px);
 }
 
-/* Caixa de resultado bonitinha */
 #result {
   margin-top: 20px;
   background: rgba(255,255,255,0.9);
@@ -95,7 +88,6 @@ button:active {
   font-size: 15px;
 }
 
-/* Animação suave */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(5px); }
   to   { opacity: 1; transform: translateY(0); }
