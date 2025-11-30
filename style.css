@@ -1,0 +1,102 @@
+html, body {
+  min-width: 360px;   /* A largura que você quiser */
+  min-height: 520px;  /* Altura que quiser */
+}
+
+/* Fundo com gradiente Brasil mais suave */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #009c3b 0%, #ffdf00 70%);
+  color: #002776;
+  padding: 20px;
+  margin: 0;
+}
+
+/* Card central */
+body > * {
+  animation: fadeIn .3s ease-in-out;
+}
+
+h1 {
+  text-align: center;
+  color: #002776;
+  margin-bottom: 20px;
+  font-size: 26px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+label {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}
+
+/* Inputs modernos */
+select, input, textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  font-size: 15px;
+  border: 2px solid #004a7c;
+  border-radius: 12px;
+  margin-top: 6px;
+  background: rgba(255, 255, 255, 0.85);
+  outline: none;
+  transition: 0.25s;
+}
+
+/* Efeito ao focar */
+select:focus, input:focus, textarea:focus {
+  border-color: #002776;
+  box-shadow: 0 0 6px rgba(0, 39, 118, 0.5);
+}
+
+/* Textarea grande e confortável */
+textarea {
+  height: 110px;
+  resize: none;
+}
+
+/* Botão estiloso */
+button {
+  width: 100%;
+  padding: 14px;
+  background: #002776;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  margin-top: 15px;
+  font-size: 17px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+button:hover {
+  background: #013b94;
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 12px rgba(0,0,0,0.25);
+}
+
+button:active {
+  transform: translateY(0px);
+}
+
+/* Caixa de resultado bonitinha */
+#result {
+  margin-top: 20px;
+  background: rgba(255,255,255,0.9);
+  padding: 15px;
+  border-radius: 12px;
+  border-left: 6px solid #002776;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.15);
+  font-size: 15px;
+}
+
+/* Animação suave */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

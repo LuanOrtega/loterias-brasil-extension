@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Debug - Loterias Brasil</title>
+<link rel="stylesheet" href="style.css">
+<script src="popup.js" defer></script>
+
+<!-- Simula ambiente da extensão -->
+<script>
+    // Simulação do chrome API (caso seu JS use no futuro)
+    window.chrome = { storage: { sync: {}, local: {} } };
+</script>
+
+</head>
+<body>
+  <h1>DEBUG - Loterias Brasil</h1>
+
+  <!-- Mesmo código do popup -->
+  <label>Loteria:</label>
+  <select id="game">
+    <option value="megasena">Mega-Sena</option>
+    <option value="quina">Quina</option>
+    <option value="lotofacil">Lotofácil</option>
+    <option value="duplasena">Dupla-Sena</option>
+  </select>
+
+  <label>Concurso:</label>
+  <input id="contest" type="number" placeholder="Ex: 1234">
+
+  <button id="search">Buscar Resultado</button>
+
+  <div id="result"></div>
+</body>
+</html>

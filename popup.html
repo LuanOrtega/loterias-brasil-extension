@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Loterias Brasil</title>
+<link rel="stylesheet" href="style.css">
+<script src="popup.js" defer></script>
+</head>
+<body>
+  <h1>Loterias Brasil</h1>
+
+  <label>Jogo:</label>
+  <select id="game">
+    <option value="megasena">Mega-Sena (6 números)</option>
+    <option value="quina">Quina  (5 números)</option>
+    <option value="lotofacil">Lotofácil  (15 números)</option>
+    <option value="duplasena">Dupla-Sena  (6 números)</option>
+  </select>
+
+  <label>Concurso:</label>
+  <input id="contest" type="number" placeholder="Ex: 1234" >
+
+  <label for="bets">Suas apostas (uma por linha):</label>
+  <textarea id="bets" placeholder="Ex: 01, 05, 12, 23, 35, 56"></textarea>
+
+  <button id="search">Buscar Resultado</button>
+
+  <div id="result"></div>
+</body>
+</html>
